@@ -62,6 +62,7 @@ public class Main {
                     // Если нода не текст, то это один из параметров сотрудника
                     if (employeeProp.getNodeType() != Node.TEXT_NODE) {
                         //System.out.println(employeeProp.getNodeName() + ":" + employeeProp.getChildNodes().item(0).getTextContent());
+                        //System.out.println(employeeProp.getChildNodes().item(0)); // Про это вопрос написал к задаче
                         if (employeeProp.getNodeName().equals("id")) {
                             employee.id = Long.parseLong(employeeProp.getChildNodes().item(0).getTextContent());
                         } else if (employeeProp.getNodeName().equals("firstName")) {
